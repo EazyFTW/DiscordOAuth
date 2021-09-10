@@ -49,7 +49,7 @@ public class OAuthBuilder {
         for (String scope : scopes)
             scopesBuilder.append(scope).append("%20");
 
-        this.scopes = scopesBuilder.substring(0, this.scopes.length() - 3);
+        this.scopes = scopesBuilder.substring(0, scopesBuilder.length() - 3);
 
         return this;
     }
