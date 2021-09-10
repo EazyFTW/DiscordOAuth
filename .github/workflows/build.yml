@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths:
+    - 'src/**'
+    - 'build.gradle'
 
 env:
   path: build/libs/DiscordOAuth.jar
